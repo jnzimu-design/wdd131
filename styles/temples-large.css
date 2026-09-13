@@ -1,5 +1,4 @@
 @media screen and (min-width: 600px) {
-
     .temple-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -17,37 +16,17 @@
 
     header {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-    }
-
-    .header-content {
-        flex: 1;
-    }
-
-    nav {
-        flex: 2;
+        justify-content: space-between;
     }
 }
 
-
 @media screen and (min-width: 900px) {
-
     .temple-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    header {
-        flex-direction: row;
-    }
-
     nav {
         justify-content: flex-end;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        background-color: red;
     }
 }
