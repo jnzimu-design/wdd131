@@ -1,0 +1,279 @@
+:root {
+    --primary-color: #d70909;
+    --secondary-color: #0b7dff;
+    --accent-color: #cca50a;
+
+    --text-color: #222;
+    --white: #ffffff;
+    --light-background: rgba(255, 255, 255, 0.88);
+
+    --max-width: 1200px;
+}
+
+/* ---------- Global ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--white);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 10px solid var(--secondary-color);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+/* ---------- Hero ---------- */
+
+.hero {
+    position: relative;
+}
+
+.hero>picture>img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ---------- Cards ---------- */
+
+.card {
+    background-color: var(--light-background);
+    padding: 1rem;
+}
+
+.card h2 {
+    margin: 0 0 1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+
+/* ---------- Data ---------- */
+
+.data {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.data-list,
+.weather-list {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.data-list p,
+.weather-list p {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    column-gap: 0.5rem;
+    margin: 0.45rem 0;
+    font-size: 0.9rem;
+}
+
+.data-list strong,
+.weather-list strong {
+    text-align: right;
+}
+
+.data-list span,
+.weather-list span {
+    text-align: left;
+}
+
+
+/* ---------- Weather ---------- */
+
+.weather {
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+}
+
+.weather-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.3rem;
+    font-size: 0.9rem;
+}
+
+
+/* ==========================================================
+   DESKTOP / WIDER VIEW
+   ========================================================== */
+
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 1.5rem;
+        border-bottom: 12px solid var(--secondary-color);
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .hero {
+        position: relative;
+        min-height: 500px;
+    }
+
+    .hero>picture>img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+
+    /* ---------- Desktop Data Card ---------- */
+
+    .data {
+        position: absolute;
+        z-index: 2;
+
+        top: 35px;
+        left: 1.5%;
+
+        width: 260px;
+
+        padding: 0.75rem 1rem 1rem;
+
+        background-color: rgba(255, 255, 255, 0.88);
+
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    .data h2,
+    .weather h2 {
+        margin: 0 -1rem 1rem;
+
+        padding: 0.75rem;
+
+        background-color: var(--secondary-color);
+        color: var(--white);
+
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+
+    /* ---------- Desktop Weather Card ---------- */
+
+    .weather {
+        position: absolute;
+        z-index: 2;
+
+        right: 1.5%;
+        bottom: 30px;
+
+        width: 230px;
+
+        padding: 0.75rem 1rem 1rem;
+
+        background-color: rgba(255, 255, 255, 0.88);
+
+        border-top: none;
+
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+
+
+    /*
+       SVG is mobile-only.
+    */
+    .weather-icon {
+        display: none;
+    }
+
+
+    /*
+       The weather emoticon is desktop-only
+       and uses a pseudo-element.
+    */
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.4rem;
+    }
+
+
+    .data-list,
+    .weather-list {
+        max-width: none;
+    }
+
+    .data-list p,
+    .weather-list p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ---------- Larger Desktop ---------- */
+
+@media screen and (min-width: 1000px) {
+
+    .hero>picture>img {
+        height: 550px;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .data {
+        left: 2%;
+        top: 35px;
+        width: 270px;
+    }
+
+    .weather {
+        right: 2%;
+        bottom: 35px;
+        width: 240px;
+    }
+}
