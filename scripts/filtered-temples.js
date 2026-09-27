@@ -63,7 +63,7 @@ const temples = [
         dedicated: "2004, January, 11",
         area: 17500,
         imageUrl:
-            "https://www.churchofjesuschrist.org/media/image/accra-ghana-temple-lds-fac2f82?lang=eng"
+            "https://www.churchofjesuschrist.org/imgs/fac2f821c9895e1acd1325cbdb3fa447c4bb4e19/full/!800,/0/default"
     },
     {
         templeName: "Salt Lake Utah",
@@ -71,7 +71,7 @@ const temples = [
         dedicated: "1893, April, 6",
         area: 253000,
         imageUrl:
-            "https://www.churchofjesuschrist.org/media/image/salt-lake-temple-e04d565?lang=eng"
+            "https://www.churchofjesuschrist.org/imgs/e04d5651a770e152ef8f79c9d39f2fa75c900886/full/!800,/0/default"
     },
     {
         templeName: "Rome Italy",
@@ -79,7 +79,7 @@ const temples = [
         dedicated: "2019, March, 10",
         area: 41010,
         imageUrl:
-            "https://www.churchofjesuschrist.org/media/image/rome-italy-temple-bf73f13?lang=eng"
+            "https://www.churchofjesuschrist.org/imgs/bf73f132564c2d84658d4cd8d4a3c9fab184dd22/full/!800,/0/default"
     }
 ];
 
