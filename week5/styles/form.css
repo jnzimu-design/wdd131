@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #111;
+}
+
+header,
+footer {
+    background-color: #3b164f;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+form {
+    background-color: #e4dfe5;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+label,
+legend {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+form>label {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.rating label {
+    text-align: center;
+    font-weight: normal;
+}
+
+.rating input {
+    display: block;
+    margin: 0.5rem auto;
+}
+
+.rating span {
+    font-size: 1.5rem;
+}
+
+fieldset label {
+    display: block;
+    margin: 0.8rem 0;
+    font-weight: normal;
+}
+
+fieldset input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b164f;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a2675;
+}
+
+.optional {
+    color: #222;
+    font-weight: normal;
+    font-style: italic;
+}
+
+form span:not(.optional) {
+    color: #a00000;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        max-width: 800px;
+    }
+
+    form {
+        padding: 2.5rem;
+    }
+}
