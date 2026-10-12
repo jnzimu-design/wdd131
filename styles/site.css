@@ -1,0 +1,256 @@
+:root {
+    --primary-color: #006B3F;
+    --accent-color: #F4C300;
+    --text-color: #222222;
+    --background-color: #FFFFFF;
+    --surface-color: #F4F7F4;
+    --border-color: #D5DED8;
+    --content-width: 1150px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--text-color);
+    background: var(--background-color);
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+.logo {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.25;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #8A6900;
+    outline-offset: 3px;
+}
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem max(1rem, calc((100% - var(--content-width)) / 2));
+    background: var(--primary-color);
+    color: var(--background-color);
+}
+
+.logo {
+    color: var(--background-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.site-nav a {
+    padding: 0.6rem 0.75rem;
+    border-radius: 4px;
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+    background: var(--accent-color);
+    color: #222222;
+}
+
+main {
+    width: min(100% - 2rem, var(--content-width));
+    margin: 0 auto;
+}
+
+.page-hero {
+    padding: 3rem 1rem;
+    margin: 1.5rem 0;
+    background: var(--surface-color);
+    border-bottom: 5px solid var(--primary-color);
+    text-align: center;
+}
+
+.page-hero h1 {
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+    font-size: clamp(2rem, 5vw, 3.25rem);
+}
+
+.page-hero p:last-child {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.content-section {
+    padding: 1.5rem 0;
+}
+
+.content-section>h2 {
+    color: var(--primary-color);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: 1.25rem;
+}
+
+.info-card {
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--background-color);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+}
+
+.info-card img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    color: var(--primary-color);
+}
+
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.25rem 0;
+}
+
+select,
+input,
+textarea {
+    max-width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #777777;
+    border-radius: 4px;
+    font: inherit;
+}
+
+button,
+.button {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: #FFFFFF;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+    background: #004D2D;
+}
+
+.callout {
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+    background: var(--surface-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.reference-list li {
+    margin-bottom: 1.5rem;
+}
+
+.status-message {
+    min-height: 1.5em;
+}
+
+.site-footer {
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+    background: var(--primary-color);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0.35rem;
+}
+
+.site-footer a {
+    color: #FFFFFF;
+    text-underline-offset: 3px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 650px) {
+    .site-header {
+        justify-content: center;
+    }
+
+    .site-nav {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .site-nav a {
+        text-align: center;
+    }
+
+    .page-hero {
+        padding: 2rem 1rem;
+    }
+}

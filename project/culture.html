@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover the cultures, languages, music, food, wildlife, and conservation of DR Congo.">
+  <title>Culture &amp; Wildlife | Explore DR Congo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body data-page="culture">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Explore <span class="brand-accent">DR Congo</span><small>Discover the heart of Africa</small></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="culture.html" aria-current="page">Culture &amp; Wildlife</a><a href="places.html">Places to Visit</a><a href="references.html">References</a></nav>
+  </div></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&amp;fit=crop&amp;w=1800&amp;q=80" alt="A musician performing" fetchpriority="high">
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content"><p class="eyebrow">PEOPLE · TRADITIONS · NATURE</p><h1>Culture &amp; Wildlife</h1><p>Meet the traditions, creative energy, and incredible biodiversity of DR Congo.</p></div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading"><p class="eyebrow">A RICH CULTURAL HERITAGE</p><h2>Many communities, one remarkable country</h2><p>DR Congo is home to hundreds of ethnic communities and a wide variety of artistic, culinary, linguistic, and musical traditions. Cultural practices differ across regions and communities.</p></div>
+      <div class="culture-grid">
+        <article class="info-card"><span class="stat-icon" aria-hidden="true">🗣️</span><h3>Languages</h3><p>French is the official language. Lingala, Swahili, Kikongo ya leta, and Tshiluba are recognized national languages. Many additional local languages are spoken.</p></article>
+        <article class="info-card"><span class="stat-icon" aria-hidden="true">🎵</span><h3>Music &amp; Dance</h3><p>Congolese rumba is internationally influential. Soukous, gospel, contemporary music, and many local musical traditions are important parts of cultural life.</p></article>
+        <article class="info-card"><span class="stat-icon" aria-hidden="true">🍲</span><h3>Food &amp; Community</h3><p>Common foods include cassava, plantains, maize, beans, fish, and leafy vegetables. Recipes and eating traditions vary across the country.</p></article>
+        <article class="info-card"><span class="stat-icon" aria-hidden="true">🎨</span><h3>Art &amp; Craft</h3><p>Wood carving, sculpture, painting, textiles, pottery, and contemporary visual arts express diverse identities, histories, and creative ideas.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container split-section">
+        <div class="split-image"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Sunlight shining into a lush rainforest" loading="lazy" width="1000" height="750"></div>
+        <div class="split-content"><p class="eyebrow">THE CONGO BASIN</p><h2>A living natural treasure</h2><p>The Congo Basin contains one of the world's largest tropical rainforest systems. Its forests store carbon, regulate water cycles, and provide habitats and resources for people and wildlife.</p><p>Protecting these environments requires conservation, responsible resource management, and respect for the communities who live in and depend on them.</p><a class="text-link" href="places.html">Explore national parks →</a></div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading"><p class="eyebrow">MEET THE WILDLIFE</p><h2>Extraordinary animals of DR Congo</h2><p>Use the filters to discover a few of the species associated with the country's forests, rivers, and protected areas.</p></div>
+      <div class="filter-bar" aria-label="Filter wildlife">
+        <label for="wildlife-filter">Filter by habitat or group</label>
+        <select id="wildlife-filter"><option value="all">All wildlife</option><option value="mammal">Mammals</option><option value="forest">Forest species</option><option value="bird">Birds</option><option value="aquatic">Aquatic life</option></select>
+      </div>
+      <div id="wildlife-grid" class="destination-grid" aria-live="polite"></div>
+      <p class="small-note">Wildlife observations and visits depend on local conservation rules, safety conditions, and protected-area access.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html">Explore <span class="brand-accent">DR Congo</span></a><p>Discover the heart of Africa.</p><nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="culture.html">Culture &amp; Wildlife</a><a href="places.html">Places to Visit</a><a href="references.html">References</a></nav><p class="copyright">© <span class="current-year">2026</span> Explore DR Congo. Educational website project.</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Explore Kinshasa, the Congo River, Virunga National Park, Kahuzi-Biega National Park, and more destinations in DR Congo.">
+    <title>Places to Visit | Explore DR Congo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/site.js" defer></script>
+</head>
+
+<body data-page="places">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Explore <span
+                        class="brand-accent">DR Congo</span><small>Discover the heart of Africa</small></span></a>
+            <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="primary-nav">☰</button>
+            <nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a href="index.html">Home</a><a
+                    href="culture.html">Culture &amp; Wildlife</a><a href="places.html" aria-current="page">Places to
+                    Visit</a><a href="references.html">References</a></nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=1800&amp;q=80"
+                alt="Mountain ranges and dramatic natural scenery" fetchpriority="high">
+            <div class="page-hero-overlay"></div>
+            <div class="container page-hero-content">
+                <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+                <h1>Places to Visit</h1>
+                <p>From energetic cities to ancient forests and spectacular mountain landscapes, discover destinations
+                    across DR Congo.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">EXPLORE THE COUNTRY</p>
+                <h2>Find your next discovery</h2>
+                <p>Search by destination name or description, filter by category, and save places to your personal list
+                    on this device.</p>
+            </div>
+            <div class="destination-tools">
+                <div class="search-field"><label for="place-search">Search destinations</label><input id="place-search"
+                        type="search" placeholder="Try Kinshasa or rainforest"></div>
+                <div><label for="place-filter">Destination type</label><select id="place-filter">
+                        <option value="all">All destinations</option>
+                        <option value="city">Cities</option>
+                        <option value="nature">Nature &amp; rivers</option>
+                        <option value="park">National parks</option>
+                    </select></div>
+            </div>
+            <div class="saved-toolbar">
+                <p id="place-count" role="status" aria-live="polite">Explore the destinations below.</p><button
+                    class="button button-small button-light" id="show-saved" type="button" aria-pressed="false">Show
+                    saved places</button>
+            </div>
+            <div id="places-grid" class="destination-grid" aria-live="polite"></div>
+            <p class="small-note">This is an educational guide, not a live travel advisory. Check current official
+                travel advice, park access, permits, and local safety conditions before making travel plans.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner"><a class="brand footer-brand" href="index.html">Explore <span
+                    class="brand-accent">DR Congo</span></a>
+            <p>Discover the heart of Africa.</p>
+            <nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Home</a><a
+                    href="culture.html">Culture &amp; Wildlife</a><a href="places.html">Places to Visit</a><a
+                    href="references.html">References</a></nav>
+            <p class="copyright">© <span class="current-year">2026</span> Explore DR Congo. Educational website project.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
