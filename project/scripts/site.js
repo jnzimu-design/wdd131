@@ -70,8 +70,8 @@ const wildlife = [
     category: "mammal",
     habitat: "forest",
     description: "An endangered great ape that lives in the Virunga mountain forests. Conservation and habitat protection are essential to its survival.",
-    image: "https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?auto=format&fit=crop&w=900&q=75",
-    alt: "A gorilla in a natural habitat"
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Mountain_gorilla_(Gorilla_beringei_beringei)_2-year-old_4.jpg",
+    alt: "Mountain gorilla in its natural forest habitat"
   },
   {
     id: "eastern-lowland-gorilla",
@@ -79,8 +79,8 @@ const wildlife = [
     category: "mammal",
     habitat: "forest",
     description: "Also called Grauer's gorilla, this great ape is native to eastern DR Congo and is threatened by habitat loss and other pressures.",
-    image: "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=900&q=75",
-    alt: "A great ape resting in greenery"
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Likal%C3%A9_-_Gorille_des_plaines_%C3%A0_Saint_Martin_la_Plaine.jpg",
+    alt: "Gorilla resting in a green environment"
   },
   {
     id: "okapi",
@@ -88,8 +88,8 @@ const wildlife = [
     category: "mammal",
     habitat: "forest",
     description: "A shy forest mammal native to DR Congo. Its striped legs and long ears make it distinctive, and it is the only living relative of the giraffe.",
-    image: "https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=900&q=75",
-    alt: "A wild mammal in a green environment"
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Aignan_(Loir-et-Cher)._Okapi.jpg",
+    alt: "Okapi showing its distinctive striped legs"
   },
   {
     id: "african-grey-parrot",
@@ -97,8 +97,8 @@ const wildlife = [
     category: "bird",
     habitat: "forest",
     description: "An intelligent parrot associated with African forests. Habitat protection and action against illegal wildlife trade are important for its future.",
-    image: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=900&q=75",
-    alt: "A grey parrot perched on a branch"
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Congo_African_Grey_pet_on_a_perch.JPG",
+    alt: "African grey parrot perched on a branch"
   },
   {
     id: "hippopotamus",
@@ -106,8 +106,8 @@ const wildlife = [
     category: "mammal",
     habitat: "aquatic",
     description: "A large semiaquatic mammal that depends on rivers and lakes for much of its daily life.",
-    image: "https://images.unsplash.com/photo-1521651201144-634f700b36ef?auto=format&fit=crop&w=900&q=75",
-    alt: "A hippopotamus in water"
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Hippo_(Hippopotamus_amphibius)_going_out_of_the_water.jpg",
+    alt: "Hippopotamus emerging from the water"
   }
 ];
 
