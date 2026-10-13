@@ -97,7 +97,7 @@ const wildlife = [
     category: "bird",
     habitat: "forest",
     description: "An intelligent parrot associated with African forests. Habitat protection and action against illegal wildlife trade are important for its future.",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Congo_African_Grey_pet_on_a_perch.JPG",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Congo_African_Grey_pet_on_a_perch.JPG?auto=format&fit=crop&w=900&q=75",
     alt: "African grey parrot perched on a branch"
   },
   {
